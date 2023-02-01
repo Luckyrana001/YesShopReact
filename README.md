@@ -1,1 +1,1 @@
-# YesShopReact
+# Yes Shop replica (React Native) 
