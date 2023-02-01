@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-
-const DealerHome = () => {
+// @ts-ignore
+export default function DealerHome({navigation}) {
   return (
     <View
       style={{
@@ -9,7 +9,9 @@ const DealerHome = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Text>Dealer, world!</Text>
+      <Text onPress={() => navigation.navigate('loginPage')}>
+        Dealer, world!
+      </Text>
     </View>
   );
-};
+}
